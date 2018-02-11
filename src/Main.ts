@@ -122,6 +122,7 @@ class Main extends egret.DisplayObjectContainer {
 
     protected jumpAndJumpEnter():void{
         //测试1111
+        //测试2222
     }
 
 
