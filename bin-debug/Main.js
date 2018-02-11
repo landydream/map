@@ -120,7 +120,8 @@ var Main = (function (_super) {
     Main.prototype.createGameScene = function () {
         GameGlobal.main = this;
         GameGlobal.init(this);
-        this.createScene();
+        // this.createScene();
+        this.jumpAndJumpEnter();
     };
     Main.prototype.createScene = function () {
         GameGlobal.mapscene = new MapScene();
@@ -153,10 +154,16 @@ var Main = (function (_super) {
             var pathAccording = new GameObjectPathAccording();
             pathAccording.tar = hero;
             hero.addPlugOnly(pathAccording);
+            //自动寻路
+            var autoM = new AutoMovePlug();
+            autoM.tar = hero;
+            hero.addPlugOnly(autoM);
             mapScene.hero = hero;
             mapScene.addUnit(hero);
         }
         GameGlobal.modelPlayer.updateRoleInfoByVo(hero, vo);
+    };
+    Main.prototype.jumpAndJumpEnter = function () {
     };
     Main.prototype.frameLogic = function () {
         var nowTime = egret.getTimer();

@@ -20,6 +20,10 @@ var Enum_MsgType = (function () {
     Enum_MsgType.MSG_TEAMALET_UPDATE = "MSG_TEAMALET_UPDATE";
     /**跨服移动 */
     Enum_MsgType.MSG_KF_PLAYER_POS = "MSG_KF_PLAYER_POS";
+    /**开始点击屏幕 */
+    Enum_MsgType.BEGIN_TOUCH_SCREEN = "BEGIN_TOUCH_SCREEN";
+    /**结束点击屏幕 */
+    Enum_MsgType.END_TOUCH_SCREEN = "END_TOUCH_SCREEN";
     return Enum_MsgType;
 }());
 __reflect(Enum_MsgType.prototype, "Enum_MsgType");

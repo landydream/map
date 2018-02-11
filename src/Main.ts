@@ -109,6 +109,9 @@ class Main extends egret.DisplayObjectContainer {
             pathAccording.tar = hero;
             hero.addPlugOnly(pathAccording);
             //自动寻路
+            var autoM: AutoMovePlug = new AutoMovePlug();
+		    autoM.tar = hero;
+		    hero.addPlugOnly(autoM);
 
 			mapScene.hero = hero;
 			mapScene.addUnit(hero);
