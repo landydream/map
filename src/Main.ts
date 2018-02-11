@@ -108,7 +108,7 @@ class Main extends egret.DisplayObjectContainer {
             var pathAccording: GameObjectPathAccording = new GameObjectPathAccording();
             pathAccording.tar = hero;
             hero.addPlugOnly(pathAccording);
-
+            //自动寻路
 
 			mapScene.hero = hero;
 			mapScene.addUnit(hero);
